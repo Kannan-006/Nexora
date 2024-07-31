@@ -1,0 +1,455 @@
+.section{
+    width: 100%;
+    height: 80px;
+    /* box-shadow: 0 0 20px ; */
+}
+.section img{
+   width: 100px;
+   height: 60px;
+   position: relative;
+   top: 3px;
+   left: 30px;   
+}
+.section nav{
+   margin-left: 200px;
+}
+.section{
+   display: flex;
+   align-items: center;
+}
+.section ul{
+   list-style-type: none;
+}
+.section ul li{
+   float: left;
+}
+.item{
+   display: inline-block;
+   text-decoration: none;
+   height: 30px;
+   font-size: 20px;
+   font-style: italic;
+   color: rgb(0, 0, 0);
+   padding: 10px 20px;
+   line-height: 30px;
+   transition: 0.4s ease-in-out;
+}
+.navcontent{
+   position: absolute;
+   top: 70px;
+   overflow: hidden;
+   color: black;
+   background-color: aliceblue;
+   display: none;
+}
+.navcontent a{
+   text-decoration: none;
+   color: rgb(14, 10, 10);
+}
+.navsub ul{
+   display: flex;
+   flex-direction: column;
+}
+.navsub ul li a{
+   display: block;
+   width: 100%;
+   padding: 10px 10px 10px 20px;
+   transition: 0.4s ease-in;
+}
+.section .item:hover{
+   background-color:#828292;
+   color: white;
+}
+.item:hover ~ .navcontent{
+   display: block;
+   max-height: 800px;
+
+}
+.btn{
+   position: relative;
+   left: 70px;
+}
+.btn button{
+   width: 100px;
+   height: 35px;
+   font-size: 15px;
+   border-radius: 6px;
+   cursor: pointer;
+   border: none;
+  font-style: italic;
+}
+.btn :hover{
+   background-color: black;
+   color: white;
+   border-radius: 20px ;
+   transition: 0.7s ease-in-out;
+  
+}
+.btn button:hover{
+   outline:3px solid #1db7d6;
+}
+
+/* market */
+
+
+
+.market{
+    width: 500px;
+    height: 200px;
+    word-spacing: 10px;
+    margin-left: 80px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.market p{
+    font-size: 17px;
+    font-weight: 400;
+    font-style: italic;
+}
+.market img{
+    position: absolute;
+    left: 50%;
+    width: 600px;
+}
+.market h2{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+/* what we do */
+
+.whatwedo h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.whatwedo{
+    display: flex;
+    margin-top: 400px;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.whatwedo details{
+    margin-left: 150px;
+    width: 80%;
+   padding: 14px;
+   box-shadow: 0px 0px 5px;
+}
+.whatwedo p{
+    font-size: 17px;
+    font-style: italic;
+}
+.whatwedo summary:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+/* how we do */
+
+#we{
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+#we h3{
+    font-size: 35px;
+    font-weight: 100;
+    font-style: italic;
+}
+#sector{
+    padding: 10px;
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   margin-top: 20px;
+   gap: 30px;
+ 
+}
+.mini p{
+    font-size: 15px;
+}
+.mini img{
+    width: 250px;
+    height: 100px;
+    position: relative;
+    left: 10px;
+}
+.mini{
+    width: 400px;
+    height: 350px;
+    word-spacing: 10px;
+    font-size: 13px;
+    text-align: center;
+   
+}
+.mini h4{
+text-align: center;
+font-size: 25px;
+font-weight: 400;
+}
+.mini:hover{
+    box-shadow:0px 0px 9px 0;
+}
+
+/* technology */
+
+
+#tech{
+    display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+#tech p{
+    width: 80%;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+#techno{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 30px;
+    gap: 30px;
+ 
+}
+.technology{
+    width: 375px;
+    height: 350px;
+    word-spacing: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.technology h2{
+    text-align: center;
+    font-weight: 100;
+    padding: 12px;
+}
+.technology p{
+    text-align: center;
+    align-items: center;
+    font-weight: 100;
+    word-spacing: 24px;
+    padding: 14px;
+}
+
+
+/* footer */
+
+.footer{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.socialicons img{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+#footer img{
+    width: 50px;
+    height: 50px;
+}
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* media */
+
+@media screen and (max-width:600px){
+   
+    .market img{
+    display: flex;
+    width: 420px;
+    height: 300px;
+    justify-content: start;
+    position: absolute;
+    left: 50px;
+   
+}
+.section img{
+    width: 50px;
+    height: 30px;
+}
+.section nav{
+   width: 300px;
+   height: 100px;
+   display: flex;   
+}
+.section ul{
+   display: flex;
+   flex-direction: row;
+}
+.section li a{
+    font-size: 8px;
+    font-weight: 800;
+    position:relative;
+    right: 160px;
+    margin-left: 3px;
+}
+.item{
+    display: flex;
+    position: relative;
+   
+}
+.navcontent{
+    position: relative;
+    right: 150px;
+    top: 13%;
+    color: black;
+    background-color: aliceblue;
+   display: none;
+}
+.navsub ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    position: relative;
+    width: 150px;
+    height: 100px;
+}
+.item:hover ~ .navcontent{
+    display: block;
+    max-height: 400px;
+    color: black;
+    max-width: 100px;
+ }
+/* title */
+
+
+    .market h2,p{
+        position: relative;
+        top: 320px;
+        width: 300px;
+        text-align: center;
+     }
+
+     /* why we do */
+     .whatwedo{
+        width: 300px;
+        position: relative;
+        top: 450px;
+     }
+     .whatwedo h3{
+        width: 300px;
+       margin-left: 100px;
+     }
+     .whatwedo details {
+        width: 280px;
+        position: relative;
+        right:60px; 
+        display: flex;
+        flex-direction: column;
+     }
+     .details p{
+        width: 270px;
+        position: relative;
+        top: 300px;
+     }
+     .whatwedo details p{
+        width: 280px;
+        position:static;
+        bottom: 500px;
+     }
+
+     /* how we do */
+
+     #we{
+        width: 300px;
+        position: relative;
+        top: 500px;
+        text-align: center;
+     }
+     #we h3{
+      width: 300px;
+      bottom:30px;
+      position: relative;
+      left: 65px;
+      text-align: center;
+     }
+     #we p{
+      width: 300px;
+      top:10px;
+      position: static;
+      margin-left: 60px;
+    }
+    .mini{
+       position: relative;
+       top: 500px;
+    }
+    .mini  p{
+       object-fit: contain;
+       position:relative;
+       top:4%;
+       left: 60px;
+       font-size: 12px;
+    }
+
+    /* technology */
+    
+    #tech{
+        position:relative;
+        top: 500px;
+       
+    }
+    #tech p{
+        position: relative;
+        top: 30px;
+        width: 450px;
+    }
+    #techno{
+        position: relative;
+        top: 560px;
+    }
+    .technology p{
+        position: relative;
+       top: 0%;
+       left: 20px;
+    }
+
+    /* foooter */
+    .hr{
+        position: relative;
+        width: 10px;
+        top: 600px;
+        right: 80px;
+    }
+    .footer{
+        position: relative;
+        top: 550px;
+        width: 400px;
+        right: 70px;
+        height: 150px;
+    }
+    .footer p{
+        width: 400px;
+        position: relative;
+        top: 2px; 
+    }
+    .footer{
+        position: relative;
+        top: 600px;
+    } 
+    #footer{
+    display: flex;
+    flex-direction: column;
+    left: 70px;
+    position: relative;
+    }
+  
+ }
+
