@@ -287,6 +287,7 @@ font-weight: 400;
     width: 60px;
     height: 40px;
     position: relative;
+    
    }
     .web img{
     display: flex;
@@ -294,12 +295,13 @@ font-weight: 400;
     height: 300px;
     justify-content: start;
     position: absolute;
-    left: 50px;
+    left: 130px;
 }
 .section nav{
    width: 300px;
    height: 100px;
    display: flex;   
+   
 }
 .section ul{
    display: flex;
@@ -346,6 +348,7 @@ font-weight: 400;
         position: relative;
         top: 300px;
         width: 300px;
+        left: 100px;
         text-align: center;
      }
 
@@ -354,10 +357,11 @@ font-weight: 400;
         width: 300px;
         position: relative;
         top: 450px;
+        left: 100px;
      }
      .whatwedo h3{
         width: 300px;
-       margin-left: 100px;
+       margin-left: 150px;
      }
      .whatwedo details {
         width: 280px;
@@ -384,6 +388,7 @@ font-weight: 400;
         position: relative;
         top: 500px;
         text-align: center;
+        left: 100px;
      }
      #we h3{
       width: 300px;
@@ -401,6 +406,7 @@ font-weight: 400;
     .mini{
        position: relative;
        top: 500px;
+       left: 30px;
     }
     .mini  p{
        object-fit: contain;
@@ -415,42 +421,54 @@ font-weight: 400;
     #tech{
         position:relative;
         top: 500px;
-       
+        
     }
+    #tech h1{
+        position: relative;
+        left: 30px;
+    }
+
     #tech p{
         position: relative;
         top: 30px;
         width: 450px;
+        left: 40px;
     }
     #techno{
         position: relative;
         top: 560px;
+        left: 50px;
     }
     .technology p{
         position: relative;
        top: 0%;
        left: 20px;
     }
-
-    /* foooter */
-    .hr{
-        position: relative;
-        width: 10px;
-        top: 600px;
-        right: 80px;
-    }
     .marketing{
         position: relative;
         top: 550px;
         width: 400px;
-        right: 70px;
+        left: 20px;
         height: 150px;
     }
     .marketing p{
         width: 400px;
         position: relative;
         top: 2px; 
+        left: 15px;
     }
+
+    /* foooter */
+    .hr{
+        position: relative;
+        width: 30px;
+        top: 600px;
+        right: 80px;
+    }
+     /* .socialicons{
+        position: relative;
+        right: 200px;
+     } */
     .footer{
         position: relative;
         top: 600px;

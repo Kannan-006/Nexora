@@ -278,7 +278,7 @@ font-weight: 400;
     height: 300px;
     justify-content: start;
     position: absolute;
-    left: 50px;
+    left: 100px;
    
 }
 .section img{
@@ -295,7 +295,7 @@ font-weight: 400;
    flex-direction: row;
 }
 .section li a{
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 800;
     position:relative;
     right: 160px;
@@ -319,7 +319,7 @@ font-weight: 400;
     flex-direction: column;
     font-size: 12px;
     position: relative;
-    width: 150px;
+    width: 300px;
     height: 100px;
 }
 .item:hover ~ .navcontent{
@@ -337,12 +337,21 @@ font-weight: 400;
         width: 300px;
         text-align: center;
      }
+     .market h2{
+        position: relative;
+        left: 60px;
+     }
+     .market p{
+        position: relative;
+        left: 70px;
+     }
 
      /* why we do */
      .whatwedo{
         width: 300px;
         position: relative;
         top: 450px;
+        left: 60px;
      }
      .whatwedo h3{
         width: 300px;
@@ -373,6 +382,7 @@ font-weight: 400;
         position: relative;
         top: 500px;
         text-align: center;
+        left: 60px;
      }
      #we h3{
       width: 300px;
@@ -410,10 +420,12 @@ font-weight: 400;
         position: relative;
         top: 30px;
         width: 450px;
+        left: 10px;
     }
     #techno{
         position: relative;
         top: 560px;
+        left: 15px;
     }
     .technology p{
         position: relative;
@@ -439,6 +451,10 @@ font-weight: 400;
         width: 400px;
         position: relative;
         top: 2px; 
+    }
+    .socialicons{
+        position: relative;
+        left: 160px;
     }
     .footer{
         position: relative;

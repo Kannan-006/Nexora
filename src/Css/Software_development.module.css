@@ -290,7 +290,7 @@ font-weight: 400;
     height: 300px;
     justify-content: start;
     position: absolute;
-    left: 50px;
+    left: 110px;
 }
 .section nav{
    width: 300px;
@@ -344,12 +344,20 @@ font-weight: 400;
         width: 300px;
         text-align: center;
      }
-
+     .title h2{
+        position: relative;
+        left: 60px;
+     }
+     .title p{
+        position: relative;
+        left: 60px;
+     }
      /* why we do */
      .do{
         width: 300px;
         position: relative;
         top: 450px;
+        left: 50px;
      }
      .do h3{
         width: 300px;
@@ -380,6 +388,7 @@ font-weight: 400;
         position: relative;
         top: 500px;
         text-align: center;
+        left: 50px;
      }
      .we h3{
       width: 300px;
@@ -413,14 +422,17 @@ font-weight: 400;
         top: 500px;
        
     }
+    
     .tech p{
         position: relative;
         top: 30px;
         width: 450px;
+        left: 20px;
     }
     .techno{
         position: relative;
         top: 560px;
+        left: 20px;
     }
     .technology p{
         position: relative;
@@ -439,13 +451,14 @@ font-weight: 400;
         position: relative;
         top: 550px;
         width: 400px;
-        right: 70px;
+        left: 10px;
         height: 150px;
     }
     .marketing p{
         width: 400px;
         position: relative;
-        top: 2px; 
+        top: 2px;
+        left: 5px; 
     }
     .footer{
         position: relative;

@@ -290,7 +290,7 @@ font-weight: 400;
     height: 250px;
     justify-content: start;
     position: absolute;
-    left: 50px;
+    left: 110px;
    
 }
 #section nav{
@@ -345,12 +345,21 @@ font-weight: 400;
         width: 300px;
         text-align: center;
      }
+     #title h2{
+        position: relative;
+        left: 70px;
+     }
+     #title p{
+        position: relative;
+        left: 80px;
+     }
 
      /* why we do */
      .do{
         width: 300px;
         position: relative;
         top: 450px;
+        left: 60px;
      }
      .do h3{
         width: 300px;
@@ -381,6 +390,7 @@ font-weight: 400;
         position: relative;
         top: 500px;
         text-align: center;
+        left: 50px;
      }
      #how h3{
       width: 300px;
@@ -418,10 +428,12 @@ font-weight: 400;
         position: relative;
         top: 30px;
         width: 450px;
+        left: 10px;
     }
     #techno{
         position: relative;
         top: 560px;
+        left: 15px;
     }
     .technology p{
         position: relative;
