@@ -28,7 +28,7 @@ const Home = () => {
 <nav>
 <ul>
  <li><a href='#' className={styles.item}>Home</a></li>
- <li><a href='#About' className={styles.item}>About Us</a></li>
+ <li><a href='#about' className={styles.item}>About Us</a></li>
  <li><a  href='#our services' className={styles.item}>Our services</a>
  <div className={styles.navcontent}>
 <div className={styles.navsub}>

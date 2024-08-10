@@ -8,11 +8,11 @@ const Login = () => {
         <form action="/login" method='post'>
         <div className={styles.formgroup}>
             <label for="name">Name:</label>
-            <input type="text" id='name' name="username" placeholder='Enter your name' reuired autoComplete='off'></input>
+            <input type="text" id='name' name="username" placeholder='Enter username' reuired autoComplete='off'></input>
         </div>
         <div className={styles.formgroup}>
             <label for="password" >Password:</label>    
-            <input type="password" name="password" id="password" placeholder="password" required />
+            <input type="password" name="password" id="password" placeholder="Enter password" required />
                 </div>
                 <button type='submit' className={styles.bbt}>Login</button>
               

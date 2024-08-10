@@ -272,6 +272,7 @@
         width: 10px;
         height: 100px;
         display: flex;   
+        
      }
      .section ul{
         display: flex;
@@ -311,9 +312,7 @@
     }
     .item:hover ~ .navcontent{
         display: block;
-        /* max-height: 400px;
-        
-        max-width: 500px; */
+      
      }
      .item{
          display: flex;
@@ -343,11 +342,13 @@
         position: relative;
         bottom: 90px;
         overflow: hidden;
-        margin-left: 10px;
+        margin-left: 10px;  
     }
+
     .services{
         position:static;
         overflow: hidden;
+        
     }
     
     .contain{
@@ -356,6 +357,7 @@
         display: flex;
         gap: 50px;
         overflow: hidden;
+        
     }
     .content{
         display: flex;
