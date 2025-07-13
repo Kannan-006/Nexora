@@ -1,271 +1,102 @@
-import React from 'react'
-import styles from '../Css/Ecommerce.module.css'
-const logo = new URL('../images/logo.jpg', import.meta.url);
+import React from 'react';
+import Navbar from './Navbar';
 const ecommerce = new URL('../images/ecommerce.jpeg', import.meta.url);
-const discovery = new URL("../images/dicovery.png",import.meta.url);
-const design = new URL("../images/web design.png",import.meta.url)
-const development = new URL("../images/development.png",import.meta.url)
-const  deployment= new URL("../images/deployment.png",import.meta.url)
-const maintanance = new URL("../images/maintanance.jpg",import.meta.url);
-const insta = new URL("../images/instagram.png",import.meta.url);
-const facebook = new URL("../images/facebook.png",import.meta.url);
-const linkedin = new URL("../images/linkedin.png",import.meta.url);
-const phone = new URL("../images/phone.png",import.meta.url);
-const mail = new URL("../images/mail.jpeg",import.meta.url);
-const address = new URL("../images/address.png",import.meta.url);
+const discovery = new URL("../images/dicovery.png", import.meta.url);
+const design = new URL("../images/web design.png", import.meta.url);
+const development = new URL("../images/development.png", import.meta.url);
+const deployment = new URL("../images/deployment.png", import.meta.url);
+const maintanance = new URL("../images/maintanance.jpg", import.meta.url);
+const insta = new URL("../images/instagram.png", import.meta.url);
+const facebook = new URL("../images/facebook.png", import.meta.url);
+const linkedin = new URL("../images/linkedin.png", import.meta.url);
+const phone = new URL("../images/phone.png", import.meta.url);
+const mail = new URL("../images/mail.jpeg", import.meta.url);
+const address = new URL("../images/address.png", import.meta.url);
 
 const Ecommerce = () => {
   return (
-    <div className={styles.header}>
+    <div className="font-sans text-gray-800">
+    <Navbar/>
 
-<div id={styles.section}>
-    <img src={logo}/>
-   
-<nav>
-<ul>
-<li><a href='#' className={styles.item}>Home</a></li>
-<li><a href='#' className={styles.item}>About Us</a></li>
-<li><a  href='#' className={styles.item}>Our services</a>
-<div className={styles.navcontent}>
-<div className={styles.navsub}>
-<ul>
-<li><a href='#' >Website Development</a></li>
-<li><a href='#' >App Development</a></li>
-<li><a href='#' >Software Development</a></li>
-<li><a href='#'>Marketing</a></li>
-<li><a href='#' >E-Commerce</a></li>
-</ul>
-</div>
-</div>
-</li>
-<li><a href='#' className={styles.item}>Career</a></li>
-<li><a href='#' className={styles.item}>Support</a></li>
-<li><a href='#' className={styles.item}>Contact US</a></li>
-</ul>
-</nav> 
-<div className={styles.btn}>
-<a href='Login'><button>Signup</button></a>
-</div>
-</div>
+      <section className="p-6 text-center max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold mb-4">E-COMMERCE</h2>
+        <p className="mb-4">Our ecommerce development service helps businesses sell their goods and services online...</p>
+        <p className="mb-6">We provide a comprehensive range of ecommerce development services...</p>
+        <img src={ecommerce} alt="Ecommerce" className="w-full rounded-lg shadow-md" />
+      </section>
 
-{/* tittle */}
+      <section className="px-6 py-10 bg-gray-100">
+        <h3 className="text-2xl font-semibold mb-6 text-center">What We Do</h3>
+        <div className="space-y-4 max-w-3xl mx-auto">
+          {[
+            { title: 'Custom Design', text: 'We make ecommerce sites that look good...' },
+            { title: 'Responsive Design', text: 'We make ecommerce sites that work well on desktops...' },
+            { title: 'E-commerce platforms', text: 'We use a variety of ecommerce platforms...' },
+            { title: 'User-friendly interface', text: 'The ecommerce website should have an easy-to-use interface...' },
+            { title: 'Product catalogue', text: 'The ecommerce website should have a catalogue of all the products...' },
+            { title: 'Shopping Cart', text: 'The ecommerce website should have a shopping cart...' },
+            { title: 'Checkout', text: 'The ecommerce website should have an easy-to-use checkout process...' },
+            { title: 'Order Management', text: 'The ecommerce website should have a system for managing and keeping track of orders...' },
+            { title: 'Search Engine Optimization', text: 'The ecommerce website should be optimised for search engines...' },
+            { title: 'Analytics and Reporting', text: 'The ecommerce site should have tools for tracking sales...' }
+          ].map((item, index) => (
+            <details key={index} className="bg-white shadow rounded p-4">
+              <summary className="cursor-pointer font-medium text-lg mb-2">{item.title}</summary>
+              <p className="text-gray-700 text-sm">{item.text}</p>
+            </details>
+          ))}
+        </div>
+      </section>
 
+      <section className="px-6 py-10">
+        <h3 className="text-2xl font-semibold mb-4 text-center">How We Do</h3>
+        <p className="max-w-3xl mx-auto mb-10">Next Web follows a well-defined process for software development...</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            { img: discovery, title: 'Discovery', desc: 'During this phase, we collaborate closely with our clients...' },
+            { img: design, title: 'Web Design', desc: 'Following the conclusion of the discovery phase...' },
+            { img: development, title: 'Development', desc: 'Following the completion of the design phase...' },
+            { img: deployment, title: 'Deployment', desc: 'Following the conclusion of the development phase...' },
+            { img: maintanance, title: 'Maintenance', desc: 'Finally, once the software has been deployed...' },
+          ].map((step, i) => (
+            <div key={i} className="bg-white p-4 rounded shadow">
+              <img src={step.img} alt={step.title} className="w-full h-40 object-contain mb-4" />
+              <h4 className="text-xl font-semibold mb-2">{step.title}</h4>
+              <p className="text-sm text-gray-700">{step.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
-<div id={styles.title}>
-  <h2>E-COMMERCE</h2>
- <p>Our ecommerce development service helps businesses sell their goods and services online by making custom ecommerce solutions. Our team of experienced developers builds ecommerce sites that are safe, scalable, and easy to use with a variety of technologies and frameworks.</p>
-<p>We provide a comprehensive range of ecommerce development services, from the design and development of custom websites to the integration of shopping carts and the setting up of payment gateways, with the goal of assisting companies of varying sizes and types in achieving online success. Our e-commerce solutions are built with scalability in mind,
-     ensuring that they are able to expand and adapt as your company develops over time.</p>
-<img src={ecommerce}/>
-</div>
+      <section className="bg-gray-50 px-6 py-10">
+        <h1 className="text-3xl font-bold mb-4 text-center">Technology Stack</h1>
+        <p className="text-center max-w-2xl mx-auto mb-8">Our ecommerce development service uses a wide range of technologies...</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {["E-Commerce Platform", "Front-end Technologies", "Back-end Technologies", "Databases", "Payment gateway integration", "Shipping integration", "Security and Compliance", "Analytics and Reporting"].map((tech, i) => (
+            <div key={i} className="bg-white p-6 rounded shadow">
+              <h2 className="text-lg font-semibold mb-2">{tech}</h2>
+              <p className="text-sm text-gray-700">Description of {tech} services.</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
-
-{/* what we do */}
-
-
-
-<div className={styles.do}>
-  <h3>What We Do</h3>
-  <details>
-    <summary>Custom Design</summary>
-    <p>We make ecommerce sites that look good, are easy to use, 
-        and are set up to make sales. Our team of designers works closely with you to learn about your brand, your target audience, and your business goals so that they can create 
-        a design that is unique and reflects your brand.</p> 
-    </details>
-
-  <details>
-    <summary>Responsive Design</summary>
-    <p>We make ecommerce sites that work well on desktops, laptops, 
-        tablets, and smartphones. This makes sure that your customers can access your online store from anywhere, at any time, and on any device.
-
-    </p>
-   </details>
-
-  <details>
-    <summary>E-commerce platforms</summary>
-    <p>We use a variety of ecommerce platforms, like Shopify,
-         WooCommerce, Magento, and BigCommerce, to make ecommerce websites that are highly functional, scalable, and easy to manage. We carefully choose the right platform for your
-         business based on what it needs and how much it can spend.</p>  </details>
-
-    <details>
-    <summary>User-friendly interface </summary>
-    <p>The ecommerce website should have an easy-to-use interface that makes it easy for visitors to find pro.</p> </details>
-
-    <details>
-    <summary>Product catalogue </summary>
-    <p>The ecommerce website should have a catalogue of all the products that can be bought.
-         The catalogue should be easy to use and let people search, 
-        filter, and sort products based on what they want.</p> </details>
-
-        <details>
-    <summary>Shophing Cart </summary>
-    <p>The ecommerce website should have a shopping cart that lets people put items in their cart and buy them.</p> </details>
-
-        <details>
-    <summary>Checkout</summary>
-    <p>The ecommerce website should have an easy-to-use checkout process that lets people pay safely.</p>
-     </details>
-
-        <details>
-    <summary>Order Management</summary>
-    <p>The ecommerce website should have a system for managing and keeping track of orders, 
-        such as order fulfilment, shipping, and returns.</p> </details>
-
-        <details>
-    <summary>Search Engine Optimization</summary>
-    <p>The ecommerce website should be optimised for search engines to make it more visible and get more visitors.</p>
-     </details>
-
-
-     <details>
-    <summary>Analytics and Reporting</summary>
-    <p>The ecommerce site should have tools for tracking sales, traffic, and how customers use the site.</p>
-     </details>
-</div>
-
-
-{/* How we do */}
-
-
-<div id={styles.how}>
-<h3>How We do</h3>
-  <p>Next Web follows a well-defined process for software development that ensures 
-    our clients receive the highest quality software on time and within budget.
-     Our software development methodology is founded on collaboration, communication, 
-     and openness.</p>
-  </div>
-
-<div id={styles.sector}>
-   <div className={styles.mini}>
-    <img src={discovery}/>
-    <h4>Discovery</h4>
-    <p>During this phase, we collaborate closely with our clients to determine their needs, objectives, and goals. We collect information regarding the project's scope, schedule, and budget. During the development process, we also identify any potential risks and obstacles. At the conclusion of this phase, we create a comprehensive project plan outlining the work scope, timelines, and deliverables.</p>
-  </div>
-
-  <div className={styles.mini}>
-    <img src={design}/>
-    <h4>Web Design</h4>
-    <p>Following the conclusion of the discovery phase, we enter the design phase. During this phase, a detailed design specification describing the software's architecture, user interface, and functionality is developed. We collaborate closely with our clients to ensure that the final product meets their needs and expectations. At the conclusion of this phase, a software prototype is developed for testing and validation.</p>
-   </div>
-
-  <div className={styles.mini}>
-    <img src={development}/>
-    <h4>Development</h4>
-    <p>Following the completion of the design phase, we enter the development phase. During this phase, our development team constructs the software in accordance with the design specification. We employ agile development methodologies to ensure that software is developed iteratively and incrementally. Additionally, we conduct routine testing and quality assurance checks to ensure that the software is of the highest standard.</p>
-     </div>
-
-
-     <div className={styles.mini}>
-    <img src={deployment}/>
-    <h4>Deployment</h4>
-    <p>Following the conclusion of the development phase, we enter the deployment phase. During this phase, the software is deployed to the production environment and final testing and quality assurance checks are conducted. We collaborate closely with our clients to ensure that the software is functioning as expected and that any issues are promptly addressed.</p>
-      </div>
-
- <div className={styles.mini}>
-    <img src={maintanance}/>
-    <h4>Maintanance</h4>
-    <p>Finally, once the software has been deployed, we will enter the maintenance phase. Throughout this phase, we provide ongoing support and maintenance to ensure that the software continues to meet the needs and expectations of our client. In addition, we provide regular updates and enhancements to keep the software current and relevant.</p>
-     </div>
-</div>
-
-{/* technology stack */}
-
-
-<div id={styles.tech}>
-  <h1>Technology Stack </h1>
-  <p>Our ecommerce development service uses a wide range of technologies and
-     frameworks to create custom ecommerce solutions that meet your business's 
-    needs and go above and beyond your expectations. </p>
-</div>
-
-<div id={styles.techno}>
-<div className={styles.technology}>
-  <h2>E-Commerce Platform</h2>
-<p>We work with a number of ecommerce platforms, including Shopify,
-     WooCommerce, Magento, and BigCommerce. Each platform has its own pros and cons, and we carefully choose the right one 
-    for your business based on its needs and goals.</p> </div>
-
-   <div className={styles.technology}>
-  <h2>Front-end Technologies</h2>
-<p>To make responsive and easy-to-use ecommerce websites, we use a variety of 
-    front-end technologies, such as HTML, CSS, JavaScript, React, Angular, and Vue.js. Our designers and developers work together to make sure that your website looks good 
-    and is set up to get the most sales.</p>
-   </div>
-
-   <div className={styles.technology}>
-  <h2>Back-end Technologies </h2>
-<p>	To make scalable and safe ecommerce websites, we use a number 
-    of back-end technologies, such as PHP, Node.js, Python, and Ruby on Rails. Our team of developers knows a lot about these technologies and 
-    can make solutions that are tailored to your business’s needs.</p>
-   </div>
-
-   <div className={styles.technology}>
-  <h2>Databases</h2>
-<p>To store and manage the data on your ecommerce site, we use databases 
-    like MySQL, MongoDB, and PostgreSQL. We carefully choose the right database for your business and make
-     sure it is scalable, secure, and reliable.</p>
-   </div>
-
-   <div className={styles.technology}>
-  <h2>Payment gateway integration</h2>
-<p>We integrate payment gateways like PayPal, Stripe, and Authorize.net 
-    so that your customers can buy things 
-    from your ecommerce website easily and safely.</p>
-   </div>
-
-   <div className={styles.technology}>
-  <h2>Shipping integration</h2>
-<p>We integrate shipping services like FedEx, UPS, and USPS to make sure that your customers 
-    get their orders on time and in good condition.</p>
-   </div>
-
-   <div className={styles.technology}>
-  <h2>Security and Compliance</h2>
-<p>We make sure that your ecommerce website is safe and meets industry 
-    standards like PCI DSS and GDPR. We use security measures like SSL encryption, two-factor authentication, and firewalls to keep your customers’ data safe 
-    and stop people from getting in without permission.</p>
-   </div>
-
-   <div className={styles.technology}>
-  <h2>Analytics and Reporting</h2>
-<p>We use ecommerce analytics tools like Google Analytics, Piwik, and
-     Adobe Analytics to keep track of your website’s sales, traffic, and conversions, among other things. This lets us improve the 
-    performance and user experience of your website.</p>
-   </div>
-
-   </div>
-   <br />
-
-
-        {/* Footer */}
-
-        <hr className={styles.hr} style={{width:"80%",marginLeft:"130px"}}/>
-
-<div className={styles.footer}>
-
-<div className={styles.socialicons}>
-<a href='#'><img src={insta}/></a>
-<a href='#'><img src={facebook}/></a>
-<a href='#'><img src={linkedin}/></a>
-</div>
-<div id={styles.footer}>
-<img src={phone}/><span>+9927387829</span>
-<img src={mail}/><span>Nextweb@gmail.com</span>
-<img src={address}/><span>Pudukkottai Main Road</span>
-
-</div>
-</div>
-
-
-
-
-
-
-
-
-      
+      <footer className="px-6 py-6 bg-white mt-10 border-t">
+        <div className="flex flex-wrap justify-between items-center max-w-6xl mx-auto">
+          <div className="flex gap-4">
+            <a href="#"><img src={insta} className="w-6 h-6" alt="Instagram" /></a>
+            <a href="#"><img src={facebook} className="w-6 h-6" alt="Facebook" /></a>
+            <a href="#"><img src={linkedin} className="w-6 h-6" alt="LinkedIn" /></a>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start mt-4 sm:mt-0 text-sm">
+            <div className="flex items-center gap-2"><img src={phone} className="w-5 h-5" alt="Phone" /><span>+9927387829</span></div>
+            <div className="flex items-center gap-2"><img src={mail} className="w-5 h-5" alt="Mail" /><span>Nextweb@gmail.com</span></div>
+            <div className="flex items-center gap-2"><img src={address} className="w-5 h-5" alt="Address" /><span>Chennai</span></div>
+          </div>
+        </div>
+      </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Ecommerce
+export default Ecommerce;
