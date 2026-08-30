@@ -7,6 +7,8 @@ import Ecommerce from "./Components/Ecommerce";
 import Marketing from "./Components/Marketing";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
+import Uiux from "./Components/uiux";
+
 
 
 
@@ -16,13 +18,14 @@ function App() {
 <BrowserRouter>
 <Routes>
   <Route path="/" element={<Home />}/>
-  <Route path="/Aboutus" element={<About />}/>
-  <Route path="/Software_development" element={<Software_development />}/>
-  <Route path="/Website_development" element={<Website_development/>}/>
-  <Route path="/Mobileapp_development" element={<Mobileapp_development/>}/>
+  <Route path="/About" element={<About />}/>
+  <Route path="/SD" element={<Software_development />}/>
+  <Route path="/WD" element={<Website_development/>}/>
+  <Route path="/MD" element={<Mobileapp_development/>}/>
   <Route path="/Marketing" element={<Marketing/>}/>
   <Route path="/Ecommerce" element={<Ecommerce/>}/>
   <Route path="/contact" element={<Contact/>}/>
+  <Route path="/uiux" element={<Uiux />} />
 </Routes>
 </BrowserRouter>
    
