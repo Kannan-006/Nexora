@@ -168,7 +168,7 @@ const Ecommerce = () => {
     <div className="min-h-screen bg-white font-sans text-[#14213d]">
       <Navbar />
 
-      {/* HERO */}
+     
       <section className="bg-blue-600 px-4 pb-20 pt-36 text-center text-white">
         <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-blue-100">
           Nexora / E-Commerce Development
@@ -192,7 +192,7 @@ const Ecommerce = () => {
         </Link>
       </section>
 
-      {/* INTRODUCTION */}
+  
       <section className="mx-auto grid max-w-6xl items-center gap-12 px-4 py-20 md:grid-cols-2">
         <div>
           <p className="mb-4 text-xs font-bold uppercase tracking-widest text-blue-600">
@@ -244,7 +244,7 @@ const Ecommerce = () => {
         </div>
       </section>
 
-      {/* FEATURES */}
+   
       <section className="bg-[#f4f1e9] px-4 py-20">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
@@ -294,7 +294,7 @@ const Ecommerce = () => {
         </div>
       </section>
 
-      {/* PROCESS */}
+   
       <section className="mx-auto max-w-6xl px-4 py-20">
         <div className="mb-12">
           <p className="mb-3 text-xs font-bold uppercase tracking-widest text-blue-600">
@@ -348,7 +348,7 @@ const Ecommerce = () => {
         </div>
       </section>
 
-      {/* TECHNOLOGY */}
+     
       <section className="bg-[#14213d] px-4 py-20 text-white">
         <div className="mx-auto max-w-6xl">
           <p className="mb-3 text-xs font-bold uppercase tracking-widest text-[#b9e769]">
@@ -383,7 +383,7 @@ const Ecommerce = () => {
         </div>
       </section>
 
-      {/* CONTACT CTA */}
+     
       <section className="bg-[#f4f1e9] px-4 py-20 text-center">
         <div className="mx-auto max-w-3xl">
           <p className="mb-4 text-xs font-bold uppercase tracking-widest text-blue-600">
@@ -409,7 +409,7 @@ const Ecommerce = () => {
         </div>
       </section>
 
-      {/* FOOTER */}
+     
       <footer className="bg-gray-900 px-4 pb-8 pt-12 text-white">
         <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-3">
           <div>

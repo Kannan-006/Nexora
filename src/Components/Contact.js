@@ -64,7 +64,7 @@ const ContactUs = () => {
     <div className="min-h-screen bg-white text-[#14213d]">
       <Navbar />
 
-      {/* HERO */}
+      
       <section className="bg-blue-600 px-4 pb-20 pt-36 text-center text-white">
         <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-blue-100">
           Let's connect
@@ -80,9 +80,9 @@ const ContactUs = () => {
         </p>
       </section>
 
-      {/* CONTACT CONTENT */}
+      
       <section className="mx-auto grid max-w-6xl gap-12 px-4 py-16 md:grid-cols-2">
-        {/* FORM */}
+    
         <div className="rounded-3xl border border-gray-200 bg-[#faf8f3] p-6 sm:p-8">
           <p className="mb-3 text-xs font-bold uppercase tracking-widest text-blue-600">
             Start a conversation
@@ -201,7 +201,7 @@ const ContactUs = () => {
           </form>
         </div>
 
-        {/* CONTACT INFORMATION */}
+   
         <div>
           <h2 className="mb-4 text-3xl font-bold">
             Let's build something meaningful.
@@ -251,7 +251,7 @@ const ContactUs = () => {
             </div>
           </div>
 
-          {/* BRAND CARD */}
+         
           <div className="relative mt-8 overflow-hidden rounded-3xl bg-[#14213d] p-8 text-white">
             <div
               aria-hidden="true"
@@ -277,7 +277,7 @@ const ContactUs = () => {
         </div>
       </section>
 
-      {/* FOOTER */}
+  
       <footer className="bg-gray-900 px-4 py-10 text-white">
         <div className="mx-auto flex max-w-6xl flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <div>

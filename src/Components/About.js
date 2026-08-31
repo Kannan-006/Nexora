@@ -13,8 +13,7 @@ const AboutUs = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
 
-      {/* HERO */}
-      <section className="bg-blue-600 px-4 py-28 text-center text-white">
+     <section className="bg-blue-600 px-4 py-28 text-center text-white">
         <h1 className="mb-4 text-4xl font-bold">About Nexora</h1>
 
         <p className="mx-auto max-w-3xl text-xl">
@@ -23,7 +22,6 @@ const AboutUs = () => {
         </p>
       </section>
 
-      {/* OUR STORY */}
       <section className="mx-auto max-w-6xl px-4 py-16">
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div>
@@ -42,7 +40,7 @@ const AboutUs = () => {
             </p>
           </div>
 
-          {/* COMPANY VISUAL */}
+        
           <div className="relative min-h-80 overflow-hidden rounded-3xl bg-[#14213d] p-7 shadow-xl">
             <div className="absolute -right-16 -top-16 h-52 w-52 rounded-full bg-blue-500/30 blur-2xl" />
 
@@ -88,7 +86,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* WHY CHOOSE NEXORA */}
+
       <section className="bg-gray-100 px-4 py-16">
         <div className="mx-auto max-w-6xl">
           <h2 className="mb-10 text-center text-3xl font-bold">
@@ -145,7 +143,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* CONTACT CTA */}
+    
       <section className="mx-auto max-w-6xl px-4 py-16 text-center">
         <h2 className="mb-4 text-3xl font-bold">
           Ready to Start Your Project?
@@ -165,7 +163,7 @@ const AboutUs = () => {
         </button>
       </section>
 
-      {/* FOOTER */}
+    
       <footer className="bg-gray-900 px-4 py-12 text-white">
         <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
           <div>

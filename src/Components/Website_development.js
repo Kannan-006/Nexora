@@ -170,7 +170,6 @@ const Website_development = () => {
     <div className="min-h-screen bg-[#f4f1e9] font-sans text-[#14213d]">
       <Navbar />
 
-      {/* HERO */}
       <section className="relative overflow-hidden px-5 pb-20 pt-36 sm:px-8 lg:px-12 lg:pt-44">
         <div
           aria-hidden="true"
@@ -230,7 +229,7 @@ const Website_development = () => {
             </div>
           </div>
 
-          {/* WEBSITE VISUAL */}
+  
           <div className="rounded-[32px] bg-[#14213d] p-5 shadow-2xl sm:p-6">
             <div className="mb-5 flex items-center justify-between gap-4 text-xs font-semibold">
               <span className="uppercase tracking-widest text-slate-400">
@@ -290,7 +289,7 @@ const Website_development = () => {
         </div>
       </section>
 
-      {/* INTRODUCTION */}
+  
       <section className="bg-white px-5 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-2">
           <div>
@@ -325,7 +324,7 @@ const Website_development = () => {
         </div>
       </section>
 
-      {/* SERVICES */}
+   
       <section
         id="website-services"
         className="scroll-mt-28 px-5 py-20 sm:px-8 lg:px-12"
@@ -395,7 +394,7 @@ const Website_development = () => {
         </div>
       </section>
 
-      {/* PROCESS */}
+
       <section className="bg-[#14213d] px-5 py-20 text-white sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <p className="mb-4 text-xs font-bold uppercase tracking-widest text-[#b9e769]">
@@ -449,7 +448,7 @@ const Website_development = () => {
         </div>
       </section>
 
-      {/* TECHNOLOGY */}
+    
       <section className="bg-white px-5 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <p className="mb-4 text-xs font-bold uppercase tracking-widest text-blue-600">
@@ -490,7 +489,7 @@ const Website_development = () => {
         </div>
       </section>
 
-      {/* WEBSITE TYPES */}
+
       <section className="px-5 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2">
           <div>
@@ -531,7 +530,7 @@ const Website_development = () => {
         </div>
       </section>
 
-      {/* CONTACT CTA */}
+      
       <section className="p-4 sm:p-6">
         <div className="mx-auto grid max-w-6xl items-center gap-8 rounded-[32px] bg-blue-600 px-7 py-14 text-white sm:px-12 md:grid-cols-[1fr_auto]">
           <div>
@@ -559,7 +558,7 @@ const Website_development = () => {
         </div>
       </section>
 
-      {/* FOOTER */}
+  
       <footer className="bg-gray-900 px-5 pb-8 pt-14 text-white sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-3">
           <div>

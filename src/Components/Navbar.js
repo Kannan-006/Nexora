@@ -84,7 +84,7 @@ const Navbar = () => {
       className="fixed inset-x-0 top-0 z-[100] border-b border-slate-200 bg-white/95 backdrop-blur-xl"
     >
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between px-5 sm:px-8">
-        {/* TEXT LOGO */}
+        
         <Link
           to="/"
           onClick={closeMenus}
@@ -94,7 +94,7 @@ const Navbar = () => {
           NEX<span className="text-blue-600">O</span>RA
         </Link>
 
-        {/* MOBILE MENU BUTTON */}
+       
         <button
           ref={mobileButtonRef}
           type="button"
@@ -112,7 +112,7 @@ const Navbar = () => {
           </span>
         </button>
 
-        {/* NAVIGATION */}
+        
         <nav
           id="nexora-navigation"
           aria-label="Main navigation"
@@ -142,7 +142,7 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            {/* SERVICES DROPDOWN */}
+          
             <li className="relative">
               <button
                 ref={servicesButtonRef}
